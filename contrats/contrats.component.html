@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+    <table class="table">
+      <tr class="thead col" >
+        <th>Numero</th>
+        <th>Type</th>
+        <th>Etat</th>
+        <th>Heurs_hebdomadaire</th>
+      </tr>
+
+      <tr *ngFor="let c of tabAllContratcts" class="col">
+        <td>{{ c.numero }}</td>
+        <td>{{ c.type }}</td>
+        <td>{{ c.heurs_hebdomadaire }}</td>
+        <td style="color: darkgreen">{{ c.etat }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

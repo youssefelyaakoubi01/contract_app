@@ -1,0 +1,17 @@
+<div class="container col-md">
+    
+    <table class="table">
+      <tr class="tr col-md-2">
+        
+        <th>Prenom</th>
+        <th>Nom</th>
+        <th>Email</th>
+      </tr>
+      <tr class="tr" style="color: black" *ngFor="let user of allUsers">
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </table>
+  </div>
+  

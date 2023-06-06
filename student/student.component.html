@@ -1,0 +1,17 @@
+<div class="container col-md-2">
+  <p style="color: black">student works!</p>
+  <table class="table">
+    <tr class="tr col-md-2">
+      <th>Code</th>
+      <th>Nom</th>
+      <th>prenom</th>
+      <th>Classe</th>
+    </tr>
+    <tr class="tr" style="color: black" *ngFor="let student of all_student">
+      <td>{{ student.code }}</td>
+      <td>{{ student.nom }}</td>
+      <td>{{ student.prenom }}</td>
+      <td>{{ student.classe }}</td>
+    </tr>
+  </table>
+</div>
